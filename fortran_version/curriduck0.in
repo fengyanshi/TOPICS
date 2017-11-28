@@ -1,0 +1,27 @@
+1  tsunami initial conditions
+1  translation slide
+1  ID
+0  beginning time
+currituck.grd    bathymetry file
+0   ASCII input
+0   ASCII output
+1   geowave
+0    positive for depth
+4   decimal degrees
+0   don't care nonuniform grid
+0   meters for depth
+285.5   xo
+36.4    yo
+0    CCW angle of north in degrees from grid top
+260  CCW angle of failure in degree from north
+1750  depth(m) of the middle of slide
+2.5      degree of slope along failure plane
+7500  initial slide length (b) (m)
+1100      maximum initial slide thickness (m)
+20000  slide width (m)
+60000  cutoff width (m)
+2323   bulk density (kg/m^3)
+0
+0
+0
+0
