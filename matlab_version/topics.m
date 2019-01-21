@@ -588,8 +588,10 @@ function topics
 %%%% Utility functions (all variables are passed)
     function hout = coseismic(my_x,my_y,xo,yo,strike,dip,depth,...
                     slip,lengthVal,widthVal,rake,open)
-        xx = deg2km(distance(xo,yo,my_x,yo)).*sign(xo-my_x);
-        yy = deg2km(distance(xo,yo,xo,my_y)).*sign(yo-my_y);
+%        xx = deg2km(distance(xo,yo,my_x,yo)).*sign(xo-my_x);
+%        yy = deg2km(distance(xo,yo,xo,my_y)).*sign(yo-my_y);
+         xx = deg2km(distance(yo,xo,my_y,xo)).*sign(yo-my_y);
+         yy = deg2km(distance(yo,xo,yo,my_x)).*sign(xo-my_x);
         [E,N] = meshgrid(xx,yy);
         [uE,uN,uZ] = okada85(E,N,depth,strike,dip,lengthVal,widthVal,...
             rake,slip,open);
