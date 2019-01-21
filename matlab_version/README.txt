@@ -5,3 +5,5 @@ http://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/ice_surface/cell_register
 
 3) in matlab command line
 >>topics
+
+note: Jeff found a bug about the 90deg E
